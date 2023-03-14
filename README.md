@@ -1,6 +1,6 @@
 # SharpIncrease
 
-
+```
 
   ____  _                     ___
  / ___|| |__   __ _ _ __ _ __|_ _|_ __   ___ _ __ ___  __ _ ___  ___
@@ -13,3 +13,5 @@
 
 
 Usage: SharpIncrease.exe -D inpufile -S MB -O outputfile
+
+```
