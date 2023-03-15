@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SharpBigg
+namespace SharpIncrease
 {
     internal class Information
     {
