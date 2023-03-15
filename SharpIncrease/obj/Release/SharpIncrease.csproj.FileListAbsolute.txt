@@ -1,8 +1,0 @@
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\bin\Release\SharpIncrease.exe.config
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\bin\Release\SharpIncrease.exe
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\bin\Release\SharpIncrease.pdb
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\obj\Release\SharpIncrease.csproj.AssemblyReference.cache
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\obj\Release\SharpIncrease.csproj.SuggestedBindingRedirects.cache
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\obj\Release\SharpIncrease.csproj.CoreCompileInputs.cache
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\obj\Release\SharpIncrease.exe
-C:\Users\Mert\source\repos\SharpIncrease\SharpIncrease\obj\Release\SharpIncrease.pdb
