@@ -12,7 +12,7 @@
             Mert Daş     @merterpreter
 
 
-Usage: SharpIncrease.exe -D inpufile -S MB -O outputfile
+Usage: SharpIncrease.exe -D inputfile -S MB -O outputfile
 
 ```
 ![sharpincrease](https://user-images.githubusercontent.com/48562581/225166491-846654c6-c117-49d8-9c26-3dbb268af1e4.png)
