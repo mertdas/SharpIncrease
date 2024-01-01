@@ -1,8 +1,8 @@
-﻿using SharpBigg;
+using SharpIncrease;
 using System;
 using System.IO;
 
-namespace DosyaPadding
+namespace Padding
 {
     class Program
     {
@@ -29,36 +29,36 @@ namespace DosyaPadding
                 return;
             }
 
-            string eskiDosyaAdi = args[1];
-            int mbSayisi = int.Parse(args[3]);
-            string yeniDosyaAdi = args[args.Length - 1];
+            string formerFileName = args[1];
+            int mbSize = int.Parse(args[3]);
+            string newFileName = args[args.Length - 1];
 
-            if (!File.Exists(eskiDosyaAdi))
+            if (!File.Exists(formerFileName))
             {
-                Console.WriteLine("Dosya bulunamadı.");
+                Console.WriteLine("File dont exist..");
                 return;
             }
 
-            FileInfo fileInfo = new FileInfo(eskiDosyaAdi);
-            long mevcutBoyut = fileInfo.Length;
+            FileInfo fileInfo = new FileInfo(formerFileName);
+            long size = fileInfo.Length;
 
-            if (mbSayisi <= 0)
+            if (mbSize <= 0)
             {
-                Console.WriteLine("Eklemek istediğiniz MB sayısı 0 veya negatif olamaz.");
+                Console.WriteLine("Size cannot be negative");
                 return;
             }
 
-            long byteSayisi = mbSayisi * 1024 * 1024 - mevcutBoyut;
-            byte[] paddingBytes = new byte[byteSayisi];
+            long byteSize = mbSize * 1024 * 1024 - size;
+            byte[] paddingBytes = new byte[byteSize];
 
-            using (FileStream eskiDosyaStream = new FileStream(eskiDosyaAdi, FileMode.Open, FileAccess.Read))
-            using (FileStream yeniDosyaStream = new FileStream(yeniDosyaAdi, FileMode.Create, FileAccess.Write))
+            using (FileStream oldFileStream = new FileStream(formerFileName, FileMode.Open, FileAccess.Read))
+            using (FileStream newFileStream = new FileStream(newFileName, FileMode.Create, FileAccess.Write))
             {
-                eskiDosyaStream.CopyTo(yeniDosyaStream);
-                yeniDosyaStream.Write(paddingBytes, 0, (int)byteSayisi);
+                oldFileStream.CopyTo(newFileStream);
+                newFileStream.Write(paddingBytes, 0, (int)byteSize);
             }
 
-            Console.WriteLine("{0} dosyasına {1} MB padding eklendi ve {2} adıyla kaydedildi.", eskiDosyaAdi, mbSayisi, yeniDosyaAdi);
+            Console.WriteLine("Added {1} MB of padding to the {0} file, saved as {2}", formerFileName, mbSize, newFileName);
         }
     }
 }
