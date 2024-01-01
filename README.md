@@ -1,5 +1,11 @@
 # SharpIncrease
 
+# Inflate
+
+Evade products with padding the file
+
+https://attack.mitre.org/techniques/T1027/001/
+
 ```
 
   ____  _                     ___
