@@ -6,6 +6,8 @@ Evade products with padding the file
 
 https://attack.mitre.org/techniques/T1027/001/
 
+![image](https://github.com/mertdas/SharpIncrease/assets/48562581/7e35fe25-7281-4423-9fdf-d2a0069865d0)
+
 ```
 
   ____  _                     ___
