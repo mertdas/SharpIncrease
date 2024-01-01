@@ -16,3 +16,7 @@ Usage: SharpIncrease.exe -D inputfile -S MB -O outputfile
 
 ```
 ![sharpincrease](https://user-images.githubusercontent.com/48562581/225166491-846654c6-c117-49d8-9c26-3dbb268af1e4.png)
+
+## Proper USAGE:
+
+SharpIncrease -D yourmalmalware -S 350 -O padded.exe
