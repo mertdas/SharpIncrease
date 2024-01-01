@@ -19,4 +19,4 @@ Usage: SharpIncrease.exe -D inputfile -S MB -O outputfile
 
 ## Proper USAGE:
 
-SharpIncrease -D yourmalmalware -S 350 -O padded.exe
+SharpIncrease.exe -D yourmalmalware -S 350 -O padded.exe
