@@ -9,6 +9,20 @@ Binary padding effectively changes the checksum of the file and can also be used
 
 https://attack.mitre.org/techniques/T1027/001/
 
+
+# SharpIncrase
+
+SharpIncrease can bypass many security measures and can be used with various file extensions.
+
+You can even increase the size of Windows Form Applications with null bytes.
+
+The security products SharpIncrease has been tested against so far:
+
+-E-Mail Security Products
+-EDRs
+-NextGenAVs
+-AVs
+-EPPs
 ![image](https://github.com/mertdas/SharpIncrease/assets/48562581/7e35fe25-7281-4423-9fdf-d2a0069865d0)
 
 ```
