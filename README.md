@@ -18,11 +18,11 @@ You can even increase the size of Windows Form Applications with null bytes.
 
 The security products SharpIncrease has been tested against so far:
 
--E-Mail Security Products
--EDRs
--NextGenAVs
--AVs
--EPPs
+-E-Mail Security Products<br>
+-EDRs<br>
+-NextGenAVs<br>
+-AVs<br>
+-EPPs<br>
 ![image](https://github.com/mertdas/SharpIncrease/assets/48562581/7e35fe25-7281-4423-9fdf-d2a0069865d0)
 
 ```
