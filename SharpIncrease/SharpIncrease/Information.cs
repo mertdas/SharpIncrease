@@ -1,64 +1,29 @@
-using SharpIncrease;
 using System;
-using System.IO;
 
-namespace DosyaPadding
+namespace SharpIncrease
 {
-    class Program
+    internal class Information
     {
-        static void Main(string[] args)
+        public static void Banner()
         {
-            Information.Banner();
-            if (args.Length == 1 && args[0] == "-h")
-            {
+            var bannerText = @"
+                   
+  _____ __ __   ____  ____   ____ ____  ____     __  ____     ___   ____  _____   ___ 
+ / ___/|  |  | /    ||    \ |    \    ||    \   /  ]|    \   /  _] /    |/ ___/  /  _]
+(   \_ |  |  ||  o  ||  D  )|  o  )  | |  _  | /  / |  D  ) /  [_ |  o  (   \_  /  [_ 
+ \__  ||  _  ||     ||    / |   _/|  | |  |  |/  /  |    / |    _]|     |\__  ||    _]
+ /  \ ||  |  ||  _  ||    \ |  |  |  | |  |  /   \_ |    \ |   [_ |  _  |/  \ ||   [_ 
+ \    ||  |  ||  |  ||  .  \|  |  |  | |  |  \     ||  .  \|     ||  |  |\    ||     |
+  \___||__|__||__|__||__|\_||__| |____||__|__|\____||__|\_||_____||__|__| \___||_____|
+                                                                                      
+                                             
 
-                Console.WriteLine("Usage of SharpIncrease.exe\n");
-                Console.WriteLine("  -D string");
-                Console.WriteLine("\tPath to orginal file");
-                Console.WriteLine("  -S string");
-                Console.WriteLine("\tHow many MBs to increase the file by");
-                Console.WriteLine("  -O string");
-                Console.WriteLine("\toutput file name");
-                return;
-            }
+                                Mert Daş @merterpreter
+                                   version: v1.0
+           
 
-            if (args.Length < 6 || args.Length % 2 != 0 || args[0] != "-D" || args[2] != "-S" || args[args.Length - 2] != "-O")
-            {
-
-                Console.WriteLine("Usage: SharpIncrease.exe -D inputfile -S MB -O outputfile");
-                return;
-            }
-
-            string formerFileName = args[1];
-            int mbSize = int.Parse(args[3]);
-            string newFileName = args[args.Length - 1];
-
-            if (!File.Exists(formerFileName))
-            {
-                Console.WriteLine("File dont exist..");
-                return;
-            }
-
-            FileInfo fileInfo = new FileInfo(formerFileName);
-            long size = fileInfo.Length;
-
-            if (mbSize <= 0)
-            {
-                Console.WriteLine("Size cannot be negative");
-                return;
-            }
-
-            long byteSize = mbSize * 1024 * 1024 - size;
-            byte[] paddingBytes = new byte[byteSize];
-
-            using (FileStream oldFileStream = new FileStream(formerFileName, FileMode.Open, FileAccess.Read))
-            using (FileStream newFileStream = new FileStream(newFileName, FileMode.Create, FileAccess.Write))
-            {
-                oldFileStream.CopyTo(newFileStream);
-                newFileStream.Write(paddingBytes, 0, (int)byteSize);
-            }
-
-            Console.WriteLine("Added {1} MB of padding to the {0} file, saved as {2}", formerFileName, mbSize, newFileName);
+        ";
+            Console.WriteLine(bannerText);
         }
     }
 }
