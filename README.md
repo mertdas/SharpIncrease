@@ -22,7 +22,7 @@ The security products SharpIncrease has been tested against so far:
 -EDRs<br>
 -NextGenAVs<br>
 -AVs<br>
--EPPs<br>
+-EPPs<br><br>
 ![image](https://github.com/mertdas/SharpIncrease/assets/48562581/7e35fe25-7281-4423-9fdf-d2a0069865d0)
 
 ```
