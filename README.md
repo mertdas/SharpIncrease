@@ -10,7 +10,7 @@ Binary padding effectively changes the checksum of the file and can also be used
 https://attack.mitre.org/techniques/T1027/001/
 
 
-# SharpIncrase
+# SharpIncrease
 
 SharpIncrease can bypass many security measures and can be used with various file extensions.
 
